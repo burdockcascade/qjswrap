@@ -28,8 +28,9 @@ add_library(qjswrapper STATIC
         src/engine.cpp
 )
 
+# Point PUBLIC headers to the include directory
 target_include_directories(qjswrapper PUBLIC
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
         $<INSTALL_INTERFACE:include>
 )
 

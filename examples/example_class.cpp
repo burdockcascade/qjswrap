@@ -1,4 +1,4 @@
-#include "../src/qjswrapper.hpp"
+#include "../include/qjswrapper.hpp"
 
 struct Vector2 {
     float x;

@@ -1,4 +1,4 @@
-#include "module.hpp"
+#include "../include/module.hpp"
 
 namespace qjswrapper {
 

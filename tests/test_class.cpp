@@ -1,5 +1,5 @@
 #include <catch2/catch_all.hpp>
-#include "../src/qjswrapper.hpp"
+#include "../include/qjswrapper.hpp"
 #include <cmath>
 
 // A sample C++ struct to test our bindings

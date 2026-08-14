@@ -1,5 +1,5 @@
 #include <catch2/catch_all.hpp>
-#include "../src/qjswrapper.hpp"
+#include "../include/qjswrapper.hpp"
 
 TEST_CASE("Engine Lifecycle and Evaluation", "[engine]") {
     qjswrapper::Engine engine;

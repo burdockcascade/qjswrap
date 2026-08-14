@@ -1,5 +1,5 @@
 #include <catch2/catch_all.hpp>
-#include "../src/qjswrapper.hpp"
+#include "../include/qjswrapper.hpp"
 
 TEST_CASE("Value Type Conversions", "[value]") {
     qjswrapper::Engine engine;
