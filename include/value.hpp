@@ -1,19 +1,9 @@
 #pragma once 
-#include <quickjs.h> 
-#include <string> 
-#include <string_view> 
-#include <utility> 
-#include <optional> 
-#include <vector> 
-#include <concepts> 
-#include <type_traits> 
-#include <tuple> 
-#include <stdexcept> 
-#include <unordered_map> 
-#include <functional> 
-#include <shared_mutex> 
-#include <mutex> 
-#include <memory>
+#include <quickjs.h>
+#include <optional>
+#include <type_traits>
+#include <functional>
+#include <shared_mutex>
 
 namespace qjswrap {
     namespace detail { 

@@ -1,3 +1,11 @@
+#include <quickjs.h>
+#include <string>
+#include <string_view>
+#include <utility>
+#include <vector>
+#include <stdexcept>
+#include <mutex>
+#include <memory>
 #include "../include/value.hpp"
 
 namespace qjswrap {

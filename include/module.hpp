@@ -1,15 +1,5 @@
 #pragma once
 
-#include <quickjs.h>
-#include <string>
-#include <string_view>
-#include <vector>
-#include <functional>
-#include <unordered_map>
-#include <utility>
-#include <mutex>
-#include <stdexcept>
-
 #include "value.hpp"
 
 namespace qjswrap {
