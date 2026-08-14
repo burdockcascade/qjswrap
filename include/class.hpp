@@ -14,7 +14,7 @@
 
 #include "value.hpp"
 
-namespace qjswrapper {
+namespace qjswrap {
 
     namespace detail {
 

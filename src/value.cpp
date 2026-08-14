@@ -1,6 +1,6 @@
 #include "../include/value.hpp"
 
-namespace qjswrapper {
+namespace qjswrap {
 
     Value::Value(JSContext* ctx, const JSValue val) : ctx(ctx), val(val) {}
 

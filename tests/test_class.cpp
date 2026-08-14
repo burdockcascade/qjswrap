@@ -1,5 +1,5 @@
 #include <catch2/catch_all.hpp>
-#include "../include/qjswrapper.hpp"
+#include "../include/qjswrap.hpp"
 #include <cmath>
 
 // A sample C++ struct to test our bindings
@@ -52,7 +52,7 @@ public:
 };
 
 TEST_CASE("C++ Class to JS Binding", "[class]") {
-    qjswrapper::Engine engine;
+    qjswrap::Engine engine;
 
     // Register the class and its bindings
     engine.make_class<TestVector>("Vector2")

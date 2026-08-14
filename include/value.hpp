@@ -15,7 +15,7 @@
 #include <mutex> 
 #include <memory>
 
-namespace qjswrapper { 
+namespace qjswrap {
     namespace detail { 
         // Thread-safe class info registry 
         template <typename T> 

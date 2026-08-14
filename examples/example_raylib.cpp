@@ -1,9 +1,9 @@
 #include <string>
 #include <raylib.h>
 #include <print>
-#include "../include/qjswrapper.hpp"
+#include "../include/qjswrap.hpp"
 
-void make_raylib_module(qjswrapper::Engine &engine) {
+void make_raylib_module(qjswrap::Engine &engine) {
 
     // Define the Raylib module
     auto raylib_mod = engine.make_module("Raylib");
@@ -46,7 +46,7 @@ void make_raylib_module(qjswrapper::Engine &engine) {
 int main() {
 
     // Initialize the engine
-    qjswrapper::Engine engine;
+    qjswrap::Engine engine;
 
     // Define the script
     const std::string script = R"(
@@ -71,7 +71,7 @@ int main() {
     make_raylib_module(engine);
 
     // Execute the script
-    if (auto result = engine.eval(script, "raylib.js", qjswrapper::EvalType::Module)) {
+    if (auto result = engine.eval(script, "raylib.js", qjswrap::EvalType::Module)) {
         std::println("Script executed successfully.");
     } else {
         const auto& err = result.error();

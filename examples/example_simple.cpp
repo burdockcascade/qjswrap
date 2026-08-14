@@ -1,8 +1,8 @@
 #include <print>
-#include "../include/qjswrapper.hpp"
+#include "../include/qjswrap.hpp"
 
 int main() {
-    qjswrapper::Engine engine;
+    qjswrap::Engine engine;
 
     // 1. Evaluate simple math
     auto res1 = engine.eval("const a = 10; const b = 20; a + b;");

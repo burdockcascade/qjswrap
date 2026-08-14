@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <cstring>
 
-namespace qjswrapper {
+namespace qjswrap {
 
     Engine::Engine() {
         rt = JS_NewRuntime();

@@ -1,8 +1,8 @@
 #include <catch2/catch_all.hpp>
-#include "../include/qjswrapper.hpp"
+#include "../include/qjswrap.hpp"
 
 TEST_CASE("Native ECMAScript Modules", "[module]") {
-    qjswrapper::Engine engine;
+    qjswrap::Engine engine;
 
     // 1. Build a native module fluently
     engine.make_module("math")
@@ -17,7 +17,7 @@ TEST_CASE("Native ECMAScript Modules", "[module]") {
             // Note: Modules don't return the last expression directly to the C++ eval call.
             // We set it to a global so we can check it in the test.
             globalThis.test_result = multiply(PI, 2.0);
-        )", "<eval>", qjswrapper::EvalType::Module);
+        )", "<eval>", qjswrap::EvalType::Module);
 
         REQUIRE(result.has_value());
 

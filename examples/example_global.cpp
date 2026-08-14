@@ -1,6 +1,6 @@
 #include <iostream>
 #include <print>
-#include "../include/qjswrapper.hpp"
+#include "../include/qjswrap.hpp"
 
 static JSValue nativeConsoleLog(JSContext *ctx, JSValueConst this_val, int argc, JSValueConst *argv) {
     for (int i = 0; i < argc; ++i) {
@@ -14,7 +14,7 @@ static JSValue nativeConsoleLog(JSContext *ctx, JSValueConst this_val, int argc,
 }
 
 int main() {
-    qjswrapper::Engine engine;
+    qjswrap::Engine engine;
     engine.global()
         .set_constant("PI", 3.14159)
         .set_constant("APP_NAME", "My Awesome Engine")

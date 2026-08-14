@@ -1,6 +1,6 @@
 #include "../include/module.hpp"
 
-namespace qjswrapper {
+namespace qjswrap {
 
     namespace detail {
         int ModuleRegistry::init_trampoline(JSContext* ctx, JSModuleDef* m) {
