@@ -7,7 +7,6 @@
 #include <type_traits>
 #include <stdexcept>
 #include <utility>
-#include <unordered_map>
 #include <vector>
 #include <shared_mutex>
 #include <mutex>
